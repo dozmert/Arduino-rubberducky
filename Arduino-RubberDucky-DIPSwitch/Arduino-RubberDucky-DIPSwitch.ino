@@ -7,7 +7,7 @@ SYNOPSIS
   This version does not use DIP Switch settings.
 
 .NOTES
-  Version:        	1.0
+  Version:        	2.0
   Author:         	Dennis Ozmert
   GitHub:	  	      https://github.com/dozmert
   Creation Date:    15/10/2022 @ 10:00pm
@@ -30,12 +30,31 @@ int buttonPin = 10;  // pushbutton
 int sdPin = 4; // SD Pin
 File myFile;
 boolean first = true;
-String DEFAULT_FILE_NAME = "script.txt";
+
 // FUNCTIONS
 void setup(){ // Used to initialise SD, open designated file and read through lines
   //Serial.begin(9600); //Debugging 
   //Keyboard.begin(); //Debugging
   delay(2500);
+  String dip = ""; // Name of the file that will be opened
+
+  // Sets the given pins as switches for the dip switches
+  pinMode(3, INPUT_PULLUP);
+  pinMode(5, INPUT_PULLUP);
+  pinMode(6, INPUT_PULLUP);
+  pinMode(7, INPUT_PULLUP);
+  pinMode(8, INPUT_PULLUP);
+  pinMode(9, INPUT_PULLUP);
+  
+  // Switches are checked, dip string is contructed
+  if (digitalRead(3) == LOW){dip += "1";} else {dip += "0";}
+  if (digitalRead(5) == LOW){dip += "1";} else {dip += "0";}
+  if (digitalRead(6) == LOW){dip += "1";} else {dip += "0";}
+  if (digitalRead(7) == LOW){dip += "1";} else {dip += "0";}
+  if (digitalRead(8) == LOW){dip += "1";} else {dip += "0";}
+  if (digitalRead(9) == LOW){dip += "1";} else {dip += "0";}
+  dip += ".txt";
+
   pinMode(buttonPin,INPUT);
   if (digitalRead(buttonPin) == HIGH){  // If buttonPin pressed, kill function
     //Serial.print("Button_pressed"); //Debugging
@@ -44,7 +63,7 @@ void setup(){ // Used to initialise SD, open designated file and read through li
     //Serial.print("SD didn't initialise"); //Debugging
     return;
   }
-  myFile = SD.open(DEFAULT_FILE_NAME); // Opens designated file
+  myFile = SD.open(dip); // Opens designated file
   if (myFile){ // If file initialised, run function
     //Serial.print("File opened"); //Debugging
     Keyboard.begin(); // Starts HID keyboard function

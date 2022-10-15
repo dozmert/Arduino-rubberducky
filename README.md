@@ -41,12 +41,12 @@ Data below based on breadboard layout.
 | Arduino VCC-2 | -> | TactileButton-1 | - | - |
 | Arduino GND-2 | -> | Resistor | -> | TactileButton-2-1
 | Arduino D10 | -> | TactileButton-2-2 | - | - |
-| Arduino D2 | -> | DIPSwitch-1 | -> | Arduino GND |
-| Arduino D3 | -> | DIPSwitch-2 | -> | Arduino GND |
-| Arduino D5 | -> | DIPSwitch-3 | -> | Arduino GND |
-| Arduino D6 | -> | DIPSwitch-4 | -> | Arduino GND |
-| Arduino D7 | -> | DIPSwitch-5 | -> | Arduino GND |
-| Arduino D8 | -> | DIPSwitch-6 | -> | Arduino GND |
+| Arduino D3 | -> | DIPSwitch-1 | -> | Arduino GND |
+| Arduino D5 | -> | DIPSwitch-2 | -> | Arduino GND |
+| Arduino D6 | -> | DIPSwitch-3 | -> | Arduino GND |
+| Arduino D7 | -> | DIPSwitch-4 | -> | Arduino GND |
+| Arduino D8 | -> | DIPSwitch-5 | -> | Arduino GND |
+| Arduino D9 | -> | DIPSwitch-6 | -> | Arduino GND |
 
 #### Notes to keep in mind
 - Long ducky-like script strings may crash arduino due to RAM consumption. String lines over 300 characters should be split into seperate lines. This will not affect how the script runs but will help reduce RAM consumption.
