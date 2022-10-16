@@ -8,7 +8,7 @@ SYNOPSIS
 
 .NOTES
   Version:        	2.0
-  Author:         	Dennis Ozmert
+  Author:         	Dennis Ozmert (Sourced from cited works)
   GitHub:	  	      https://github.com/dozmert
   Creation Date:    15/10/2022 @ 10:00pm
   Last Updated:     15/10/2022

@@ -48,6 +48,10 @@ Data below based on breadboard layout.
 | Arduino D8 | -> | DIPSwitch-5 | -> | Arduino GND |
 | Arduino D9 | -> | DIPSwitch-6 | -> | Arduino GND |
 
+#### Build
+
+
+
 #### Notes to keep in mind
 - Long ducky-like script strings may crash arduino due to RAM consumption. String lines over 300 characters should be split into seperate lines. This will not affect how the script runs but will help reduce RAM consumption.
 > STRING abcde
@@ -55,6 +59,12 @@ Data below based on breadboard layout.
 - Hyphens must not be used for simultaneous key presses due to current scripting. 
 >"CTRL ALT DELETE" instead of "CTRL-ALT-DELETE"
 - Features not implemented: DEFAULT_DELAY, REPLAY. This project uses arduino's inbuilt <a href="https://github.com/arduino-libraries/Keyboard/blob/master/src/Keyboard.h">keyboard.h</a> library, any keys not implemented in that will not work with this. eg: PRINTSCREEN.
+
+#### Example Scripts
+| Script | Description |
+| --- | --- |
+| SingleScript | A simple script which runs cmd.exe and echos "Hello world" |
+| DIPSwitch | 64 scripts based on a 6-way DIP switch's binary output. The first script "000000" is exactly the same as the SingleScript. In addition is a txt file with all 64 filenames listed that can be used to index/record your script usage |
 
 #### To do
 - Confirm resistor used in hardware
