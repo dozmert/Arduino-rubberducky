@@ -6,7 +6,7 @@ Current versions of this script
 | --- | --- |
 |  [Arduino-RubberDucky-SingleScript](https://github.com/dozmert/Arduino-rubberducky/blob/master/Arduino-RubberDucky-DIPSwitch/Arduino-RubberDucky-DIPSwitch.ino) | Single payload script |
 | [Arduino-RubberDucky-DIPSwitch](https://github.com/dozmert/Arduino-rubberducky/blob/master/Arduino-RubberDucky-SingleScript/Arduino-RubberDucky-SingleScript.ino) | 64 payload scripts | 
-	| Arduino-RubberDucky-Bluetooth | In progress... 64 payload scripts and bluetooth interactability |
+| Arduino-RubberDucky-Bluetooth | In progress... 64 payload scripts and bluetooth interactability |
 
 ### Description
 A project based on the work of [Seytonic's Duckduino-microSD](https://github.com/Seytonic/Duckduino-microSD).  Videos of his project can be found [here](https://www.youtube.com/watch?v=ksvo1WDYQ7s) and [here](https://www.youtube.com/watch?v=QrwqeI99I8E). I wanted to tackle this project myself as both a learning experience and a utility tool for my craft. 
