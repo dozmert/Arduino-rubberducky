@@ -1,6 +1,6 @@
 # Arduino Rubberducky
 ### Synopsis
-A script to run on an arduino (using atmega32u4 chip) which reads ducky-like scripts from a microSD card. 
+A script to run on an Arduino (using atmega32u4 chip) which reads ducky-like scripts from a microSD card. 
 There are two versions of this script:
 - Arduino-RubberDucky-SingleScript
 - Arduino-RubberDucky-DIPSwitch
@@ -13,13 +13,13 @@ A project based on the work of [Seytonic's Duckduino-microSD](https://github.com
 - Create and load scripts onto microSD card
 - Select script via DIP switch configuration
 - Plug Arduino into PC to execute script
-- Press and old tactile button when plugging Arduino into PC to not execute script
+- Press and hold tactile button when plugging Arduino into PC to not execute script
 
 #### Example Scripts
 | Script | Description |
 | --- | --- |
 | [SingleScript](https://github.com/dozmert/Arduino-rubberducky/blob/master/Example%20scripts/SingleScript/script.txt) | A simple script which runs cmd.exe and echos "Hello world" |
-| [DIPSwitch](https://github.com/dozmert/Arduino-rubberducky/tree/master/Example%20scripts/DIPSwitch) | 64 scripts based on a 6-way DIP switch's binary output. The first script "000000" is exactly the same as the SingleScript. In addition is a txt file with all 64 filenames listed that can be used to index/record your script usage |
+| [DIPSwitch](https://github.com/dozmert/Arduino-rubberducky/tree/master/Example%20scripts/DIPSwitch) | 64 scripts based on a 6-way DIP switch's binary output. The first script "000000" is the same as the SingleScript. In addition is a txt file with all 64 filenames listed that can be used to index/record your script usage |
 
 ### Build
 #### Hardware
@@ -67,12 +67,12 @@ Data below based on breadboard layout.
 ![](/img/build_7.jpg)
 ### Notes & Troubleshooting
 - I originally had a lot of trouble getting this working which ended up being a result of my pin contacts failing to carry signals. If you're using pins, ensure they're soldered.
-- Long ducky-like script strings may crash arduino due to RAM consumption. String lines over 300 characters should be split into seperate lines. This will not affect how the script runs but will help reduce RAM consumption.
-> STRING abcde
-> STRING fghij
+- Long ducky-like script strings may crash Arduino due to RAM consumption. String lines over 300 characters should be split into separate lines. This will not affect how the script runs but will help reduce RAM consumption.
+> STRING abcdefghijklmnopqrstu
+> STRING vwxyzmnopqrstuvwxyz
 - Hyphens must not be used for simultaneous key presses due to current scripting. 
 >"CTRL ALT DELETE" instead of "CTRL-ALT-DELETE"
-- Features not implemented: DEFAULT_DELAY, REPLAY. This project uses arduino's inbuilt <a href="https://github.com/arduino-libraries/Keyboard/blob/master/src/Keyboard.h">keyboard.h</a> library, any keys not implemented in that will not work with this. eg: PRINTSCREEN.
+- Features not implemented: DEFAULT_DELAY, REPLAY. This project uses Arduino's inbuilt <a href="https://github.com/arduino-libraries/Keyboard/blob/master/src/Keyboard.h">keyboard.h</a> library, any keys not implemented in that will not work with this. eg: PRINTSCREEN.
 
 ### To do
 - Confirm resistor used in hardware for documentation.
