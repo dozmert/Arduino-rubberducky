@@ -19,10 +19,10 @@ A project based on the work of [Seytonic's Duckduino-microSD](https://github.com
 - Press and hold tactile button when plugging Arduino into PC to not execute script
 
 #### Example Payload Scripts
-| Script | Description |
+| Payload script | Description |
 | --- | --- |
-| [SingleScript](https://github.com/dozmert/Arduino-rubberducky/blob/master/Example%20scripts/SingleScript/script.txt) | A simple script which runs cmd.exe and echos "Hello world" |
-| [DIPSwitch](https://github.com/dozmert/Arduino-rubberducky/tree/master/Example%20scripts/DIPSwitch) | 64 scripts based on a 6-way DIP switch's binary output. The first script "000000" is the same as the SingleScript. In addition is a txt file with all 64 filenames listed that can be used to index/record your script usage |
+| [SingleScript](https://github.com/dozmert/Arduino-rubberducky/blob/master/Example%20scripts/SingleScript/script.txt) | A simple paylod which runs cmd.exe and echos "Hello world" |
+| [DIPSwitch](https://github.com/dozmert/Arduino-rubberducky/tree/master/Example%20scripts/DIPSwitch) | 64 payloads based on a 6-way DIP switch's binary output. The first script "000000" is the same as the SingleScript. In addition is a txt file with all 64 filenames listed that can be used to index/record your script usage |
 
 ### Build
 #### Hardware
