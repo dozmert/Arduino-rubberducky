@@ -4,9 +4,9 @@ A script to run on an Arduino (using atmega32u4 chip) which reads ducky-like scr
 Current versions of this script
 | Script name | Script capabilities | 
 | --- | --- |
-|  [Arduino-RubberDucky-SingleScript](https://github.com/dozmert/Arduino-rubberducky/blob/master/Arduino-RubberDucky-DIPSwitch/Arduino-RubberDucky-DIPSwitch.ino) | Single script |
-| [Arduino-RubberDucky-DIPSwitch](https://github.com/dozmert/Arduino-rubberducky/blob/master/Arduino-RubberDucky-SingleScript/Arduino-RubberDucky-SingleScript.ino) | 64 scripts | 
-	| Arduino-RubberDucky-Bluetooth | In progress... 64 scripts and bluetooth interactability |
+|  [Arduino-RubberDucky-SingleScript](https://github.com/dozmert/Arduino-rubberducky/blob/master/Arduino-RubberDucky-DIPSwitch/Arduino-RubberDucky-DIPSwitch.ino) | Single payload script |
+| [Arduino-RubberDucky-DIPSwitch](https://github.com/dozmert/Arduino-rubberducky/blob/master/Arduino-RubberDucky-SingleScript/Arduino-RubberDucky-SingleScript.ino) | 64 payload scripts | 
+	| Arduino-RubberDucky-Bluetooth | In progress... 64 payload scripts and bluetooth interactability |
 
 ### Description
 A project based on the work of [Seytonic's Duckduino-microSD](https://github.com/Seytonic/Duckduino-microSD).  Videos of his project can be found [here](https://www.youtube.com/watch?v=ksvo1WDYQ7s) and [here](https://www.youtube.com/watch?v=QrwqeI99I8E). I wanted to tackle this project myself as both a learning experience and a utility tool for my craft. 
@@ -18,7 +18,7 @@ A project based on the work of [Seytonic's Duckduino-microSD](https://github.com
 - Plug Arduino into PC to execute script
 - Press and hold tactile button when plugging Arduino into PC to not execute script
 
-#### Example Scripts
+#### Example Payload Scripts
 | Script | Description |
 | --- | --- |
 | [SingleScript](https://github.com/dozmert/Arduino-rubberducky/blob/master/Example%20scripts/SingleScript/script.txt) | A simple script which runs cmd.exe and echos "Hello world" |
