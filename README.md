@@ -25,7 +25,7 @@ A project based on the work of [Seytonic's Duckduino-microSD](https://github.com
 #### Hardware
 - 1x Arduino Leonardo Pro Micro
 >TZT Pro Micro ATmega32U4 5V 16MHz Original Chip Replace ATmega328 For Arduino Pro Mini With 2 Row Pin Header For Leonardo UNO R3
-![[build_1.jpg]]
+![](/Arduino-rubberducky/blob/master/img/build_1.jpg)
 - 1x MicroSD card reader module
 >Micro SD Storage Expansion Board Micro SD TF Card Memory Shield Module SPI For Arduino
 ![[build_2.jpg]]
