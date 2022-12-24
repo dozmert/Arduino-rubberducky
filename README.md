@@ -30,24 +30,29 @@ A project based on the work of [Seytonic's Duckduino-microSD](https://github.com
 #### Hardware
 - 1x Arduino Leonardo Pro Micro
 >TZT Pro Micro ATmega32U4 5V 16MHz Original Chip Replace ATmega328 For Arduino Pro Mini With 2 Row Pin Header For Leonardo UNO R3
+
 ![](/img/build_1.jpg)
 
 - 1x MicroSD card reader module
 >Micro SD Storage Expansion Board Micro SD TF Card Memory Shield Module SPI For Arduino
 > Formatted as FAT32
+
 ![](/img/build_2.jpg)
 
 - 1x Tactile switch
 - 1x Resistor
 >Unknown, taken from Arduino Uno Starter kit.
+
 ![](/img/build_3.jpg)
 
 - 1x DIP Switch 
 > 6 way DIP switch, standard pcb IC mounting. Can use various sizes based on Arduino pinout.
+
 ![](/img/build_4.jpg)
 
 - 1x Bluetooth Module
 > Generic Board
+
 ![](/img/build_8.jpg)
 
 #### Pinout
@@ -83,6 +88,7 @@ Data below based on breadboard layout.
 ##### Part 2
 4. Wiring DIP switch to board.
 ![](/img/build_7.jpg)
+
 ##### Part 3
 5. Wiring BTModule to board.
 (Work in progress)
